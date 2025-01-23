@@ -1,0 +1,3 @@
+# Ignorar archivos específicos del sistema operativo
+.DS_Store
+
