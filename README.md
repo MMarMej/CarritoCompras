@@ -75,6 +75,15 @@ El diagrama de la base de datos se encuentra en la carpeta **Database** de este 
 
 ## Instrucciones para Uso
 
+# Requisitos previos
+
+Antes de ejecutar el proyecto, asegúrate de tener lo siguiente instalado en tu máquina:
+
+- **Java 17** (o versión superior)
+- **Maven** (para la gestión de dependencias)
+- **PostgreSQL** (o cualquier otra base de datos compatible) 
+
+
 1. **Clona este repositorio** a tu máquina local:
    ```bash
    git clone <URL-del-repositorio>
@@ -87,6 +96,15 @@ El diagrama de la base de datos se encuentra en la carpeta **Database** de este 
    
 4. **Consulta y administra los datos**:
    - Puedes realizar consultas a las tablas, insertar datos y probar el sistema según tus necesidades.
+
+5. **Configuración de la Aplicación**:
+   - Edita el archivo src/main/resources/application.properties para configurar la conexión a tu base de datos PostgreSQL. Aquí tienes un ejemplo de configuración
+   spring.datasource.url=jdbc:postgresql://localhost:5432/carrito_compras
+   spring.datasource.username=tu_usuario
+   spring.datasource.password=tu_contraseña
+   spring.jpa.hibernate.ddl-auto=update
+    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
 
 ## Contribuciones
 
